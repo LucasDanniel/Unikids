@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniKids | Galeria</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div>
+          <img class="logo" src="img/logo-mobile.jpg" />
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Galeria</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contatos</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="img/menu_white_36dp.svg" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Pagina inicial</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Galeria</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contatos</a></li>
+        </ul>
+      </div>
+    </header>
+    <script>
+      function menuShow() {
+        let menuMobile = document.querySelector(".mobile-menu");
+        if (menuMobile.classList.contains("open")) {
+          menuMobile.classList.remove("open");
+          document.querySelector(".icon").src = "./img/menu_white_36dp.svg";
+        } else {
+          menuMobile.classList.add("open");
+          document.querySelector(".icon").src = "./img/close_white_36dp.svg";
+        }
+      }
+    </script>
+  </body>
+</html>
