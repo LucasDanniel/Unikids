@@ -2,8 +2,9 @@
 
 header {
   background-color: #fcd1da;
-  box-shadow: 0px 0px 10px;
-  border-radius: 0px 0px 12px 12px;
+  box-shadow: 0 0 10px;
+  border-radius: 0 0 12px 12px;
+  position: sticky;
 }
 body {
   background: url("../img/fundo.jpg") no-repeat fixed center center;
@@ -19,7 +20,7 @@ footer {
 }
 main {
   display: flex;
-  height: 100vh;
+  align-items: center;
   flex-direction: column;
 }
 /*logo*/

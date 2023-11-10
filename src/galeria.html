@@ -6,18 +6,23 @@
     <title>UniKids | Galeria</title>
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/galeria.css" />
   </head>
   <body>
     <header>
       <nav class="nav-bar">
         <div>
-          <img class="logo" src="img/logo-mobile.jpg" />
+          <img class="logo" src="img/logo.jpg" />
         </div>
         <div class="nav-list">
           <ul>
             <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Galeria</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contatos</a></li>
+            <li class="nav-item">
+              <a href="./galeria.html" class="nav-link">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contatos.html" class="nav-link">Contatos</a>
+            </li>
           </ul>
         </div>
         <div class="mobile-menu-icon">
@@ -36,6 +41,57 @@
         </ul>
       </div>
     </header>
+    <main>
+      <div class="gallery">
+        <div class="image">
+          <img
+            src="./img/escola.jpg"
+            alt="Crianças em sala de aula aprendendo"
+          />
+        </div>
+        <div class="image">
+          <img src="./img/dia-das-maes.jpg" alt="Descrição da imagem" />
+        </div>
+        <div class="image">
+          <img src="./img/dia-do-indio.png" alt="Descrição da imagem" />
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="image">
+          <img
+            src="./img/escola.jpg"
+            alt="Crianças em sala de aula aprendendo"
+          />
+        </div>
+        <div class="image">
+          <img src="./img/dia-das-maes.jpg" alt="Descrição da imagem" />
+        </div>
+        <div class="image">
+          <img src="./img/dia-do-indio.png" alt="Descrição da imagem" />
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="image">
+          <img
+            src="./img/escola.jpg"
+            alt="Crianças em sala de aula aprendendo"
+          />
+        </div>
+        <div class="image">
+          <img src="./img/dia-das-maes.jpg" alt="Descrição da imagem" />
+        </div>
+        <div class="image">
+          <img src="./img/dia-do-indio.png" alt="Descrição da imagem" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Todos os diretios resevados 2023</p>
+      <p>Desenvolvido por:</p>
+      <p>Daniel Domingos Almeida Lima</p>
+      <p>Lucas Danniel da Silva</p>
+      <p>Pedro Lucas Faustino Gois</p>
+    </footer>
     <script>
       function menuShow() {
         let menuMobile = document.querySelector(".mobile-menu");
