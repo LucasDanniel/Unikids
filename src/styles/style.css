@@ -1,15 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
 header {
   background-color: #fcd1da;
   box-shadow: 0 0 10px;
   border-radius: 0 0 12px 12px;
   position: sticky;
 }
-body {
-  background: url("../img/fundo.jpg") no-repeat fixed center center;
-  background-size: cover;
-}
+
 footer {
   background-color: #4bd8d8;
   display: flex;
@@ -19,6 +14,7 @@ footer {
   width: 100%;
 }
 main {
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -222,7 +218,6 @@ main {
   }
   .mobile-menu .nav-item {
     display: block;
-    font-family: "Nunito", sans-serif;
     padding-top: 1.2rem;
   }
   .open {
