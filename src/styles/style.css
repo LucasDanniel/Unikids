@@ -6,7 +6,8 @@ header {
 }
 
 footer {
-  background-color: #4bd8d8;
+  background-color: rgb(255,176,97);
+  color:rgb(79,78,78);
   display: flex;
   flex-direction: column;
   padding-top: 10px;
@@ -23,6 +24,9 @@ main {
 .logo {
   height: auto;
   width: 200px;
+}
+.logo-mobile{
+  display:none;
 }
 /*Barra de navegação*/
 .nav-bar {
@@ -194,6 +198,9 @@ main {
     display: none;
   }
   .logo-mobile {
+    display: flex;
+    width: 70px;
+    height: auto;
   }
   .nav-item {
     display: none;
