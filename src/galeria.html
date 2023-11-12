@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UniKids | Galeria</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-png" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/galeria.css" />
@@ -12,11 +13,16 @@
     <header>
       <nav class="nav-bar">
         <div>
-          <img class="logo" src="img/logo.jpg" />
+          <a href="./index.html"> <img class="logo" src="img/logo.jpg" /></a>
+          <a href="./index.html"
+            ><img class="logo-mobile" src="img/logo-mobile.jpg"
+          /></a>
         </div>
         <div class="nav-list">
           <ul>
-            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Inicio</a>
+            </li>
             <li class="nav-item">
               <a href="./galeria.html" class="nav-link">Galeria</a>
             </li>
@@ -27,76 +33,64 @@
         </div>
         <div class="mobile-menu-icon">
           <button onclick="menuShow()">
-            <img class="icon" src="img/menu_white_36dp.svg" />
+            <img class="icon" src="./assets/menu_white_36dp.svg" />
           </button>
         </div>
       </nav>
       <div class="mobile-menu">
         <ul>
           <li class="nav-item">
-            <a href="#" class="nav-link">Pagina inicial</a>
+            <a href="./index.html" class="nav-link">Inicio</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">Galeria</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contatos</a></li>
+          <li class="nav-item">
+            <a href="./galeria.html" class="nav-link">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contatos.html" class="nav-link">Contatos</a>
+          </li>
         </ul>
       </div>
     </header>
-    <main>
+    <main class="gallery-container">
       <h1>Fotos UniKids</h1>
-      <div class="gallery-image">
-        <div class="img-box">
-          <img src="https://picsum.photos/350/250?image=444" alt="" />
-          <div class="transparent-box">
-            <div class="caption">
-              <p>Library</p>
-              <p class="opacity-low">Architect Design</p>
-            </div>
-          </div>
+      <div class="gallery">
+        <div class="image">
+          <img
+            src="https://via.placeholder.com/400x400"
+            alt="Descrição da imagem"
+          />
         </div>
-        <div class="img-box">
-          <img src="https://picsum.photos/350/250/?image=232" alt="" />
-          <div class="transparent-box">
-            <div class="caption">
-              <p>Night Sky</p>
-              <p class="opacity-low">Cinematic</p>
-            </div>
-          </div>
+        <div class="image">
+          <img
+            src="https://via.placeholder.com/400x400"
+            alt="Descrição da imagem"
+          />
         </div>
-        <div class="img-box">
-          <img src="https://picsum.photos/350/250/?image=431" alt="" />
-          <div class="transparent-box">
-            <div class="caption">
-              <p>Tea Talk</p>
-              <p class="opacity-low">Composite</p>
-            </div>
-          </div>
+        <div class="image">
+          <img
+            src="https://via.placeholder.com/400x400"
+            alt="Descrição da imagem"
+          />
         </div>
-        <div class="img-box">
-          <img src="https://picsum.photos/350/250?image=474" alt="" />
-          <div class="transparent-box">
-            <div class="caption">
-              <p>Road</p>
-              <p class="opacity-low">Landscape</p>
-            </div>
-          </div>
+      </div>
+      <div class="gallery">
+        <div class="image">
+          <img
+            src="https://via.placeholder.com/400x400"
+            alt="Descrição da imagem"
+          />
         </div>
-        <div class="img-box">
-          <img src="https://picsum.photos/350/250?image=344" alt="" />
-          <div class="transparent-box">
-            <div class="caption">
-              <p>Sea</p>
-              <p class="opacity-low">Cityscape</p>
-            </div>
-          </div>
+        <div class="image">
+          <img
+            src="https://via.placeholder.com/400x400"
+            alt="Descrição da imagem"
+          />
         </div>
-        <div class="img-box">
-          <img src="https://picsum.photos/350/250?image=494" alt="" />
-          <div class="transparent-box">
-            <div class="caption">
-              <p>Vintage</p>
-              <p class="opacity-low">Cinematic</p>
-            </div>
-          </div>
+        <div class="image">
+          <img
+            src="https://via.placeholder.com/400x400"
+            alt="Descrição da imagem"
+          />
         </div>
       </div>
     </main>
@@ -112,10 +106,10 @@
         let menuMobile = document.querySelector(".mobile-menu");
         if (menuMobile.classList.contains("open")) {
           menuMobile.classList.remove("open");
-          document.querySelector(".icon").src = "./img/menu_white_36dp.svg";
+          document.querySelector(".icon").src = "./assets/menu_white_36dp.svg";
         } else {
           menuMobile.classList.add("open");
-          document.querySelector(".icon").src = "./img/close_white_36dp.svg";
+          document.querySelector(".icon").src = "./assets/close_white_36dp.svg";
         }
       }
     </script>

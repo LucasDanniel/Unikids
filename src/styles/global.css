@@ -6,9 +6,8 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
-body,
-html {
-  height: 100%;
+body {
+  min-height: 100vh;
 }
 body {
   background: url("../img/fundo.jpg") no-repeat fixed center center;

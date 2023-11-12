@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato | UniKids</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-png" />
+    <title>UniKids | Contatos</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-png" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -11,31 +13,45 @@
     <header>
       <nav class="nav-bar">
         <div>
-          <img class="logo" src="img/logo.jpg" />
-          <img class="logo-mobile" src="img/logo-mobile.jpg" />
+          <a href="./index.html"><img class="logo" src="img/logo.jpg" /></a>
+          <a href="./index.html"
+            ><img class="logo-mobile" src="img/logo-mobile.jpg"
+          /></a>
         </div>
         <div class="nav-list">
           <ul>
-            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
-            <li class="nav-item"><a href="contatos.html" class="nav-link">Contatos</a></li>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./galeria.html" class="nav-link">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contatos.html" class="nav-link">Contatos</a>
+            </li>
           </ul>
         </div>
         <div class="mobile-menu-icon">
           <button onclick="menuShow()">
-            <img class="icon" src="img/menu_white_36dp.svg" />
+            <img class="icon" src="./assets/menu_white_36dp.svg" />
           </button>
         </div>
       </nav>
       <div class="mobile-menu">
         <ul>
-          <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-          <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
-          <li class="nav-item"><a href="contatos.html" class="nav-link">Contatos</a></li>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./galeria.html" class="nav-link">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contatos.html" class="nav-link">Contatos</a>
+          </li>
         </ul>
       </div>
     </header>
-    <main>
+    <main class="contact-container">
       <!--formulario para contatos-->
       <div class="conteiner-form">
         <form class="formulario">
@@ -47,7 +63,7 @@
               type="text"
               class="input-bordas"
               placeholder="Nome"
-              required=""
+              required
             />
             <span class="focus-border"><i></i></span>
           </label>
@@ -57,7 +73,7 @@
               type="tel"
               class="input-bordas"
               placeholder="Telefone"
-              required=""
+              required
             />
             <span class="focus-border"><i></i></span>
           </label>
@@ -67,7 +83,7 @@
               type="email"
               class="input-bordas"
               placeholder="E-mail"
-              required=""
+              required
             />
             <span class="focus-border"><i></i></span>
           </label>
@@ -77,7 +93,7 @@
               type="text"
               class="input-bordas"
               placeholder="Assunto"
-              required=""
+              required
             />
             <span class="focus-border"><i></i></span>
           </label>
@@ -88,7 +104,7 @@
               class="input-bordas textarea"
               rows="4"
               placeholder="Mensagem"
-              required=""
+              required
             ></textarea>
             <span class="focus-border"><i></i></span>
           </label>
@@ -113,10 +129,10 @@
         let menuMobile = document.querySelector(".mobile-menu");
         if (menuMobile.classList.contains("open")) {
           menuMobile.classList.remove("open");
-          document.querySelector(".icon").src = "./img/menu_white_36dp.svg";
+          document.querySelector(".icon").src = "./assets/menu_white_36dp.svg";
         } else {
           menuMobile.classList.add("open");
-          document.querySelector(".icon").src = "./img/close_white_36dp.svg";
+          document.querySelector(".icon").src = "./assets/close_white_36dp.svg";
         }
       }
     </script>
