@@ -18,26 +18,44 @@ footer {
   text-align: center;
   width: 100%;
 }
+
+#esconder{
+  display:none;
+}
+
+#btn-esconder{
+  text-align:center;
+  width: 90px;
+  margin-left: 46%;
+  background-color: #c9f4fa;
+  border: none;
+  cursor: pointer;
+}
+
 .contact-container {
   min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 /*logo*/
 .logo {
   height: auto;
   width: 200px;
 }
+
 .logo-mobile {
   display: none;
 }
+
 /*Barra de navegação*/
 .nav-bar {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 6rem;
 }
+
 .nav-list ul {
   display: flex;
   margin-top: 10%;
@@ -45,9 +63,11 @@ footer {
 
   list-style: none;
 }
+
 .nav-item {
   margin: 0 15px;
 }
+
 .nav-link {
   text-decoration: none;
   font-size: 1.15rem;
@@ -55,16 +75,20 @@ footer {
   color: rgb(0, 0, 0);
   font-weight: 600;
 }
+
 .mobile-menu-icon {
   display: none;
 }
+
 .mobile-menu {
   display: none;
 }
+
 /* Formulario */
 .conteiner-form {
   margin-top: 100px;
 }
+
 .formulario .titulo {
   color: #150d0d;
   text-align: center;
@@ -73,6 +97,7 @@ footer {
   padding-bottom: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
 .formulario {
   max-width: 500px;
   margin: auto;
@@ -107,6 +132,7 @@ footer {
 .textarea {
   resize: none !important;
 }
+
 /*Efeitos para as bordas*/
 .input-bordas ~ .focus-border:before,
 .input-bordas ~ .focus-border:after {
@@ -120,6 +146,7 @@ footer {
   transition: 0.2s;
   transition-delay: 0.2s;
 }
+
 .input-bordas ~ .focus-border:after {
   top: auto;
   bottom: 0;
@@ -127,6 +154,7 @@ footer {
   left: 0;
   transition-delay: 0.6s;
 }
+
 .input-bordas ~ .focus-border i:before,
 .input-bordas ~ .focus-border i:after {
   content: "";
@@ -138,6 +166,7 @@ footer {
   background-color: #e066ffaf;
   transition: 0.2s;
 }
+
 .input-bordas ~ .focus-border i:after {
   left: auto;
   right: 0;
@@ -145,23 +174,28 @@ footer {
   bottom: 0;
   transition-delay: 0.4s;
 }
+
 .input-bordas:focus ~ .focus-border:before,
 .input-bordas:focus ~ .focus-border:after {
   width: 100%;
   transition: 0.2s;
   transition-delay: 0.6s;
 }
+
 .input-bordas:focus ~ .focus-border:after {
   transition-delay: 0.2s;
 }
+
 .input-bordas:focus ~ .focus-border i:before,
 .input-bordas:focus ~ .focus-border i:after {
   height: 100%;
   transition: 0.2s;
 }
+
 .input-bordas:focus ~ .focus-border i:after {
   transition-delay: 0.4s;
 }
+
 /*botao*/
 .button-form {
   background-color: #ffaec0;
@@ -172,6 +206,7 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
+
 /*efeito do botao*/
 .borda-inversa {
   display: inline-block;
@@ -193,6 +228,7 @@ footer {
   background: none;
   color: #ffaec0;
 }
+
 /*Resposividade para telas menores*/
 @media screen and (max-width: 730px) {
   .contact-container {

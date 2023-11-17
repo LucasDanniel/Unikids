@@ -192,12 +192,16 @@
         </div>
       </div>
     </main>
+    <!--rodape com botao de esconder os nomes-->
     <footer>
-      <p>&copy; Todos os diretios resevados 2023</p>
+      <button id="btn-esconder">Clique aqui</button>
+      <div id="esconder">
       <p>Desenvolvido por:</p>
       <p>Daniel Domingos Almeida Lima</p>
       <p>Lucas Danniel da Silva</p>
       <p>Pedro Lucas Faustino Gois</p>
+      </div>
+      <p style="font-size:20px;">&copy; Todos os diretios resevados 2023</p>
     </footer>
 
     <script>
@@ -233,6 +237,15 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
+
+      document.getElementById('btn-esconder').addEventListener('click', function(){
+        let texto=document.getElementById('esconder');
+        if(texto.style.display==='none'){
+          texto.style.display='block';
+        }else{
+          texto.style.display='none';
+        }
+      })
 
       function menuShow() {
         let menuMobile = document.querySelector(".mobile-menu");
