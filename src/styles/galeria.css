@@ -4,7 +4,15 @@
   align-items: center;
   min-height: 100vh;
 }
-
+.title-gallery {
+  display: flex;
+  align-items: center;
+  margin: 32px 0;
+  gap: 16px;
+}
+.title-gallery img {
+  width: 60px;
+}
 .gallery {
   width: 100%;
   max-width: 80%;

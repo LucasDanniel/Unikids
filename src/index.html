@@ -49,12 +49,94 @@
         </ul>
       </div>
     </header>
+
     <main class="homepage-container">
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="./img/carrosel1.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/carrosel2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/carrosel3.jpg" style="width: 100%" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <div class="icons-title">
+        <img
+          src="./assets/star-solid.svg"
+          class="home-icon"
+          alt="Icone sobre a escola"
+        />
+        <h1>Sobre nossa escola</h1>
+      </div>
+      <section class="secao4" id="sobre">
+        <div class="secao4-div">
+          <!-- Card 1 -->
+          <div class="secao4-div-card">
+            <img
+              decoding="async"
+              src="./assets/medal-solid.svg"
+              alt="imagem do card 1 html e css"
+            />
+            <h3>Profissionais Certificados</h3>
+            <p>
+              Temos profissionais prepadados para realizar um ensino de
+              qualidade
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="secao4-div-card">
+            <img
+              decoding="async"
+              src="./assets/gamepad-solid.svg"
+              alt="imagem do card 2 html e css"
+            />
+            <h3>Áreas de lazer</h3>
+            <p>Ensino lúdico afim de trazer melhor aproveitamento</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="secao4-div-card">
+            <img
+              decoding="async"
+              src="./assets/comments-solid.svg"
+              alt="imagem do card 3 html e css"
+            />
+            <h3>Aulas em outras linguas</h3>
+            <p>Temos ensino em linguas estrangeiras preparando para o futuro</p>
+          </div>
+        </div>
+      </section>
+      <div class="icons-title">
+        <img
+          src="./assets/newspaper-solid.svg"
+          class="home-icon"
+          alt="Icone de notícias"
+        />
+        <h1>Notícias UniKids</h1>
+      </div>
       <div class="container">
         <div class="card">
           <div class="card__header">
             <img
-              src="https://source.unsplash.com/600x400/?computer"
+              src="./img/dia-das-maes.jpg"
               alt="card__image"
               class="card__image"
               width="600"
@@ -73,7 +155,7 @@
         <div class="card">
           <div class="card__header">
             <img
-              src="https://source.unsplash.com/600x400/?food"
+              src="./img/escola.jpg"
               alt="card__image"
               class="card__image"
               width="600"
@@ -81,7 +163,7 @@
           </div>
           <div class="card__body">
             <span class="tag tag-brown">Encontro</span>
-            <h4>Delicious Food</h4>
+            <h4>Aprendendo brincando</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
               perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea
@@ -92,7 +174,7 @@
         <div class="card">
           <div class="card__header">
             <img
-              src="https://source.unsplash.com/600x400/?car,automobile"
+              src="./img/folclore.jpg"
               alt="card__image"
               class="card__image"
               width="600"
@@ -100,66 +182,7 @@
           </div>
           <div class="card__body">
             <span class="tag tag-red">Folclore</span>
-            <h4>Race to your heart content</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea
-              atque quidem!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card">
-          <div class="card__header">
-            <img
-              src="https://source.unsplash.com/600x400/?computer"
-              alt="card__image"
-              class="card__image"
-              width="600"
-            />
-          </div>
-          <div class="card__body">
-            <span class="tag tag-blue">Technology</span>
-            <h4>What's new in 2022 Tech</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea
-              atque quidem!
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__header">
-            <img
-              src="https://source.unsplash.com/600x400/?food"
-              alt="card__image"
-              class="card__image"
-              width="600"
-            />
-          </div>
-          <div class="card__body">
-            <span class="tag tag-brown">Food</span>
-            <h4>Delicious Food</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea
-              atque quidem!
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__header">
-            <img
-              src="https://source.unsplash.com/600x400/?car,automobile"
-              alt="card__image"
-              class="card__image"
-              width="600"
-            />
-          </div>
-          <div class="card__body">
-            <span class="tag tag-red">Automobile</span>
-            <h4>Race to your heart content</h4>
+            <h4>A importância do folclore</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
               perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea
@@ -178,6 +201,39 @@
     </footer>
 
     <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
       function menuShow() {
         let menuMobile = document.querySelector(".mobile-menu");
         if (menuMobile.classList.contains("open")) {
